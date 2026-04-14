@@ -1,0 +1,32 @@
+{
+  "name": "news-explorer-backend",
+  "version": "1.0.0",
+  "description": "Backend del proyecto Full Stack News Explorer",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "lint": "npx eslint .",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PacoZ2024/news-explorer-backend.git"
+  },
+  "keywords": [],
+  "author": "PacoZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PacoZ2024/news-explorer-backend/issues"
+  },
+  "homepage": "https://github.com/PacoZ2024/news-explorer-backend#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "nodemon": "^3.1.14"
+  }
+}
