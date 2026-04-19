@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
+const bcrypt = require('bcryptjs');
+const UnauthorizedError = require('../errors/unauthorized-err');
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -30,5 +32,24 @@ const userSchema = new mongoose.Schema({
     minlength: [8, 'La longitud mínima de la contraseña es de ocho caracteres'],
   },
 });
+
+userSchema.statics.findUserByCredentials = function findUserByCredentials(
+  email,
+  password,
+) {
+  return this.findOne({ email })
+    .select('+password')
+    .orFail(() => {
+      throw new UnauthorizedError('Contraseña o correo electrónico incorrecto');
+    })
+    .then((user) => bcrypt.compare(password, user.password).then((matched) => {
+      if (!matched) {
+        throw new UnauthorizedError(
+          'Contraseña o correo electrónico incorrecto',
+        );
+      }
+      return user;
+    }));
+};
 
 module.exports = mongoose.model('user', userSchema);
