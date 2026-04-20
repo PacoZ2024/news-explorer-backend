@@ -15,12 +15,20 @@ mongoose
   .then(() => console.log('Conectado a la base de datos!'))
   .catch((err) => console.error(err));
 
+app.use(express.json());
 app.post('/signin', validateLogin, login);
 app.post('/signup', validateUser, createUser);
 app.use('/users', auth, usersRoutes);
 app.use('/articles', auth, articlesRoutes);
 app.use('/', () => {
   throw new NotFoundError('Recurso solicitado no encontrado');
+});
+app.use((err, req, res, next) => {
+  const { statusCode = 500, message } = err;
+  res.status(statusCode).send({
+    message:
+      statusCode === 500 ? 'Se ha producido un error en el servidor' : message,
+  });
 });
 
 app.listen(PORT, () => {
