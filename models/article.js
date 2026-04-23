@@ -40,7 +40,6 @@ const articleSchema = new mongoose.Schema({
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
-    select: false,
     ref: 'user',
     required: [true, 'Se requiere un usuario como propietario de la tarjeta'],
   },
