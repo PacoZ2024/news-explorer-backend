@@ -13,7 +13,7 @@ async function getArticlesList(req, res, next) {
 
 async function createArticle(req, res, next) {
   const {
-    keyword, title, description, date, source, url, urlToImage,
+    keyword, title, description, publishedAt, source, url, urlToImage,
   } =
     req.body;
   const userId = req.user._id;
@@ -23,7 +23,7 @@ async function createArticle(req, res, next) {
         keyword,
         title,
         description,
-        date,
+        publishedAt,
         source,
         url,
         urlToImage,

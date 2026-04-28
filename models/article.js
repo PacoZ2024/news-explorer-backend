@@ -14,7 +14,7 @@ const articleSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Se requiere la descripción del artículo'],
   },
-  date: {
+  publishedAt: {
     type: String,
     required: [true, 'Se requiere la fecha de publicación del artículo'],
   },
