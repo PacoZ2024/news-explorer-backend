@@ -13,9 +13,15 @@ async function getArticlesList(req, res, next) {
 
 async function createArticle(req, res, next) {
   const {
-    keyword, title, description, publishedAt, source, url, urlToImage,
-  } =
-    req.body;
+    keyword,
+    title,
+    description,
+    publishedAt,
+    source,
+    url,
+    urlToImage,
+    isSaved,
+  } = req.body;
   const userId = req.user._id;
   await User.findById(userId)
     .then((user) => {
@@ -27,6 +33,7 @@ async function createArticle(req, res, next) {
         source,
         url,
         urlToImage,
+        isSaved,
         owner: user._id,
       })
         .then((article) => res.status(201).send(article))

@@ -38,6 +38,7 @@ const validateArticle = celebrate({
     source: Joi.string().required(),
     url: Joi.string().required().custom(validateURL),
     urlToImage: Joi.string().required().custom(validateURL),
+    isSaved: Joi.string().required(),
   }),
 });
 

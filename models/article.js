@@ -38,6 +38,10 @@ const articleSchema = new mongoose.Schema({
       message: (props) => `La dirección ${props.value} no es de una URL válida`,
     },
   },
+  isSaved: {
+    type: String,
+    required: [true, 'Se requiere saber si el articulo esta guardado'],
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user',
