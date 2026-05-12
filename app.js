@@ -13,8 +13,8 @@ const { PORT = 3000 } = process.env;
 const app = express();
 
 const allowedCors = [
-  'https://www.api.news-explorer-2026.mooo.com',
   'https://api.news-explorer-2026.mooo.com',
+  'https://www.news-explorer-2026.mooo.com',
   'https://news-explorer-2026.mooo.com',
   'http://www.news-explorer-2026.mooo.com',
   'http://news-explorer-2026.mooo.com',
