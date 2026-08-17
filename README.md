@@ -2,7 +2,6 @@
 
 > La API REST robusta y segura que da soporte al ecosistema de News Explorer. Encargada del procesamiento de noticias, persistencia de datos en MongoDB y el ciclo completo de autenticación de usuarios.
 
-[![JWT Shield](https://img.shields.io/badge/JWT%20Shield-8A2BE2)](https://jwt.io)
 [![Repositorio Frontend](https://img.shields.io/badge/Repositorio%20Frontend-8A2BE2)](https://github.com/PacoZ2024/news-explorer-frontend)
 
 ---
@@ -19,10 +18,10 @@
 ### 🛠️ Tecnologías
 
 <p align="left">
-  <a href="https://mongodb.com" target="_blank" rel="noreferrer"> <img src="https://githubusercontent.com" alt="mongodb" width="45" height="45"/> </a>
-  <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://githubusercontent.com" alt="express" width="45" height="45"/> </a>
-  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://githubusercontent.com" alt="nodejs" width="45" height="45"/> </a>
-  <a href="https://jwt.io" target="_blank" rel="noreferrer"> <img src="https://svgshare.com" alt="jwt" width="45" height="45"/> </a>
+  <a href="https://mongodb.com" target="_blank" rel="noreferrer"> <img src="https://w7.pngwing.com/pngs/429/921/png-transparent-mongodb-plain-wordmark-logo-icon.png" alt="mongodb" width="45" height="45"/> </a>
+  <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbBSoaKH2G2ksz1fcjZICaeiRAsCusjz90Kw&s" alt="express" width="45" height="45"/> </a>
+  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://www.vhv.rs/dpng/d/546-5460201_node-js-logo-png-transparent-png.png" alt="nodejs" width="45" height="45"/> </a>
+  <a href="https://jwt.io" target="_blank" rel="noreferrer"> <img src="https://zonalogo.com/assets/json-web-tokens-jwt-logo-png-svg.webp" alt="jwt" width="45" height="45"/> </a>
 </p>
 
 ---
