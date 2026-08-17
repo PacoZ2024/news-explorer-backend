@@ -2,8 +2,8 @@
 
 > La API REST robusta y segura que da soporte al ecosistema de News Explorer. Encargada del procesamiento de noticias, persistencia de datos en MongoDB y el ciclo completo de autenticación de usuarios.
 
-[![JWT Shield](https://img.shields.io/badge/coverage-95%25-orange)](https://jwt.io)
-[![Repositorio Frontend](https://img.shields.io/badge/Repositorio%20Frontend)](https://github.com/PacoZ2024/news-explorer-frontend)
+[![JWT Shield](https://img.shields.io/badge/JWT%20Shield-8A2BE2)](https://jwt.io)
+[![Repositorio Frontend](https://img.shields.io/badge/Repositorio%20Frontend-8A2BE2)](https://github.com/PacoZ2024/news-explorer-frontend)
 
 ---
 
